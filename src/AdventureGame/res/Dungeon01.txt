@@ -1,0 +1,27 @@
+ROWS=8
+COLS=8
+START=7,0
+EXIT=0,7
+LAMP=7,0
+KEY=0,0
+CHEST=7,7
+GRUE=6,0
+MAP
+........
+.######.
+........
+.######.
+........
+.######.
+........
+........
+DESCRIPTIONS
+7,0|1|You are at the dungeon entrance. A lamp is resting on the floor.
+0,0|1|You are in the key room. A small rusty key is hidden here.
+7,7|1|You are in the treasure room. A locked chest waits in the corner.
+0,7|1|You are standing at the dungeon exit.
+6,0|0|This dark chamber feels dangerous. Something has been here.
+0,4|0|This hallway is cold and completely dark.
+2,3|0|You hear water dripping somewhere in the darkness.
+4,5|0|Scratch marks cover the stone walls.
+6,6|0|The air feels heavy. You feel watched.
