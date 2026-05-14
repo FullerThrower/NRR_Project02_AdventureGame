@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-
 namespace AdventureGame;
 
 public class AdventureGame
@@ -320,7 +315,7 @@ private string ResolveDungeonFilePath(string fileName)
 
 	private string GetInput()
 	{
-		return (Console.ReadLine() ?? string.Empty).Trim().ToUpper();
+		return Console.ReadLine()!.ToUpper();
 	}
 
 	private bool IsValidInput(string input)
@@ -354,7 +349,7 @@ private string ResolveDungeonFilePath(string fileName)
 		// WHY: If the player enters an unlit room without the lamp, only going back is safe.
 		if (!adventurer.HasLamp() && !r.IsLit() && input != lastDirection)
 		{
-			Console.WriteLine("You got eaten alive by the Grue in the dark!");
+			Console.WriteLine("You got eaten alive by the Grue");
 			isAdventureAlive = false;
 		}
 		else if (input == GO_NORTH)
@@ -441,7 +436,7 @@ private string ResolveDungeonFilePath(string fileName)
 		}
 		else if (hasPlayerQuit)
 		{
-			Console.WriteLine("You quit the game.");
+			Console.WriteLine("Thanks for playing!");
 		}
 		else
 		{
@@ -536,7 +531,9 @@ private string ResolveDungeonFilePath(string fileName)
 			if (adventurer.HasKey())
 			{
 				Console.WriteLine("You opened the treasure chest!");
+				Console.WriteLine();
 				Console.WriteLine("The Grue heard the chest open and is now pursuing you!");
+				Console.WriteLine();
 
 				isChestOpen = true;
 				isGrueChasing = true;
