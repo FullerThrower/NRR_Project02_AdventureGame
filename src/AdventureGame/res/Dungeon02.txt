@@ -1,0 +1,26 @@
+ROWS=8
+COLS=8
+START=7,1
+EXIT=0,6
+LAMP=7,1
+KEY=1,1
+CHEST=6,6
+GRUE=5,1
+MAP
+######.#
+#......#
+#.####.#
+#.####.#
+#.####.#
+#......#
+######.#
+#......#
+DESCRIPTIONS
+7,1|1|You enter a narrow stone dungeon. A lamp is resting beside the wall.
+1,1|1|You are in the key chamber. A small key shines on the floor.
+6,6|1|You are in the treasure chamber. The chest is waiting here.
+0,6|1|You have found the dungeon exit.
+5,1|0|The shadows are thicker here. This is where the Grue begins.
+3,1|0|A dark vertical tunnel stretches through the dungeon.
+5,6|0|You hear a low growl echo through the hallway.
+2,6|0|This dark passage feels unsafe without a lamp.
